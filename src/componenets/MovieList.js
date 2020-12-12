@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import MovieCard from "./MovieCard";
 
 const MovieList = (props) => {
   const tab = props.list;
+
   const movieList = tab.map((movie, i) => (
     <MovieCard
       key={i}

@@ -57,12 +57,12 @@ const AddMv = ({
       </Modal.Body>
 
       <Modal.Footer>
-        <Button variant="secondary" onClick={CancelMovieAddHandle}>
+        <button className="modalBtnCancel" onClick={CancelMovieAddHandle}>
           cancel
-        </Button>
-        <Button type="submit" variant="primary" onClick={AddMovieHandle}>
+        </button>
+        <button className="modalBtnSave" type="submit" onClick={AddMovieHandle}>
           Save changes
-        </Button>
+        </button>
       </Modal.Footer>
     </Modal.Dialog>
   );

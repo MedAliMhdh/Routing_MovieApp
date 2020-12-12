@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500;800&display=swap");
+
 * {
   background-color: black;
   color: #dce2e2;
 }
+
 p {
   font-family: "Bitter", serif;
   width: 300px;
@@ -46,18 +48,23 @@ button {
   transition: background-color 0.5s ease;
   border-radius: 5px;
 }
-span:hover {
-  background-color: #eff5f5;
-  color: #161919;
-  cursor: pointer;
-}
 
 .AddMvBtn:hover {
   background-color: #eff5f5;
   color: #161919;
 }
 
+span:hover {
+  background-color: #eff5f5;
+  color: #161919;
+  cursor: pointer;
+}
+
 /************************Modal******************/
+
+div.modal-content {
+  border: none;
+}
 
 div.modal-header {
   border: none;
@@ -87,8 +94,26 @@ textarea.form-control {
   border-radius: 0;
 }
 
-div.App {
+.modalBtnSave {
   border: none;
+  transition: background-color 0.5s ease;
+  border-radius: 5px;
+}
+
+.modalBtnCancel {
+  border: none;
+  transition: background-color 0.5s ease;
+  border-radius: 5px;
+}
+
+.modalBtnSave:hover {
+  background-color: #eff5f5;
+  color: #8ec664;
+}
+
+.modalBtnCancel:hover {
+  background-color: #878a8a;
+  color: #f44545;
 }
 
 /*****************************Movie Card**************************/
