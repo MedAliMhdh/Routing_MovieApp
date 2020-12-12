@@ -77,7 +77,9 @@ function App() {
       {!showModal && (
         <>
           <div className="header">
-            <button onClick={() => setShowModal(true)}>Add Movie</button>
+            <button className="AddMvBtn" onClick={() => setShowModal(true)}>
+              Add Movie
+            </button>
 
             <FilterMv
               searchHandle={searchHandle}

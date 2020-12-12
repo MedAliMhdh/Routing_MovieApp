@@ -18,7 +18,6 @@ const AddMv = ({
       <Modal.Body>
         <Form>
           <Form.Group>
-            <Form.Label>Movie title</Form.Label>
             <Form.Control
               required
               type="text"
@@ -28,7 +27,6 @@ const AddMv = ({
           </Form.Group>
 
           <Form.Group>
-            <Form.Label>Movie description</Form.Label>
             <Form.Control
               as="textarea"
               required
@@ -39,7 +37,6 @@ const AddMv = ({
           </Form.Group>
 
           <Form.Group>
-            <Form.Label>Movie rate</Form.Label>
             <Form.Control
               required
               type="number"
@@ -49,7 +46,6 @@ const AddMv = ({
           </Form.Group>
 
           <Form.Group>
-            <Form.Label>Movie's poster Url</Form.Label>
             <Form.Control
               required
               type="text"

@@ -4,7 +4,9 @@ import MovieRate from "./MovieRate";
 const MovieCard = ({ title, description, rate, children }) => {
   return (
     <div className="MovieCard">
-      <div className="Poster">{children}</div>
+      <div className="Poster" onClick={() => alert(description)}>
+        {children}
+      </div>
       <div className="MovieDescrip">
         <h1>{title}</h1>
         <MovieRate rate={rate} setRate={() => {}} />

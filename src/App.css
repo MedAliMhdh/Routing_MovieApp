@@ -15,7 +15,7 @@ h1 {
 
 button {
   height: 45px;
-  width: 100px;
+  width: 130px;
 }
 
 /********************************header*******************/
@@ -27,11 +27,69 @@ button {
   height: 100px;
   justify-content: space-between;
 }
+
 .filter {
   margin: 0 20px;
+  border: none;
+  transition: background-color 0.5s ease;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.filter:hover {
+  background-color: #eff5f5;
+  color: #161919;
+}
+
+.AddMvBtn {
+  border: none;
+  transition: background-color 0.5s ease;
+  border-radius: 5px;
+}
+span:hover {
+  background-color: #eff5f5;
+  color: #161919;
+  cursor: pointer;
+}
+
+.AddMvBtn:hover {
+  background-color: #eff5f5;
+  color: #161919;
 }
 
 /************************Modal******************/
+
+div.modal-header {
+  border: none;
+}
+
+div.modal-body {
+  border: none;
+}
+
+div.modal-footer {
+  border: none;
+}
+
+input.form-control {
+  background: black;
+  border-top: black;
+  border-right: black;
+  border-left: black;
+  border-radius: 0;
+}
+
+textarea.form-control {
+  background: black;
+  border-top: black;
+  border-right: black;
+  border-left: black;
+  border-radius: 0;
+}
+
+div.App {
+  border: none;
+}
 
 /*****************************Movie Card**************************/
 .MovieCard {
