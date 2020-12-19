@@ -122,6 +122,37 @@ textarea.form-control {
   /* height: 900px; */
 }
 
+.img {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.watchTrailer {
+  font-weight: bold;
+  background: none;
+  color: #fff;
+  transition: 0.5s ease;
+  opacity: 0;
+  float: inherit;
+  position: relative;
+  bottom: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.Poster:hover .img {
+  opacity: 0.3;
+}
+
+.Poster:hover .watchTrailer {
+  opacity: 1;
+}
+
 /************************Movie List ****************************/
 .movieList {
   display: flex;
