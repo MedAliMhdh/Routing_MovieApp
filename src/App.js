@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import HomePage from "./componenets/HomePage";
 import Trailer from "./componenets/Trailer";
@@ -16,7 +16,7 @@ function App() {
     left: "25%",
     top: "3%",
     marginLeft: "-300px",
-    marginTop: "0px",
+    marginTop: "0px"
   };
 
   return (
