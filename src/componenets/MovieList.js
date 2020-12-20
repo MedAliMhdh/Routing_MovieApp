@@ -1,21 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import MovieCard from "./MovieCard";
+import { Link } from "react-router-dom";
 
-const MovieList = (props) => {
-  const tab = props.list;
+const MovieList = ({ list1, setClickedMovie, clickedMovie }) => {
+  const handleClickedMovie = (x) => {
+    let y = list1.find((mov) => {
+      if (mov.title == x) {
+        return mov;
+      }
+    });
+    setClickedMovie(y);
+  };
 
-  const movieList = tab.map((movie, i) => (
+  const movieList = list1.map((movie, i) => (
     <MovieCard
       key={i}
       rate={movie.rate}
       title={movie.title}
       description={movie.description}
+      id={movie.id}
+      handleClickedMovie={handleClickedMovie}
     >
-      <img
-        src={movie.imgSrc}
-        style={{ width: "280px", height: "420px" }}
-        alt="Movie poster"
-      ></img>
+      <Link to={`/${movie.id}`}>
+        <img
+          src={movie.imgSrc}
+          style={{ width: "280px", height: "420px" }}
+          alt="Movie poster"
+        ></img>
+      </Link>
     </MovieCard>
   ));
   return <ul className="movieList">{movieList}</ul>;

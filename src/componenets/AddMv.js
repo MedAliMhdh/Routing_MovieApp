@@ -8,6 +8,7 @@ const AddMv = ({
   setNewDescription,
   setNewUrl,
   setRate,
+  setNewTrailer,
 }) => {
   return (
     <Modal.Dialog>
@@ -51,6 +52,15 @@ const AddMv = ({
               type="text"
               placeholder="Enter Poster Url"
               onChange={(e) => setNewUrl(e.target.value)}
+            />
+          </Form.Group>
+
+          <Form.Group>
+            <Form.Control
+              required
+              type="text"
+              placeholder="ENter Trailer URL"
+              onChange={(e) => setNewTrailer(e.target.value)}
             />
           </Form.Group>
         </Form>

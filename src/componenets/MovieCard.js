@@ -1,11 +1,18 @@
 import React from "react";
 import MovieRate from "./MovieRate";
 
-const MovieCard = ({ title, description, rate, children }) => {
+const MovieCard = ({
+  title,
+  description,
+  rate,
+  children,
+  id,
+  handleClickedMovie,
+}) => {
   return (
     <div className="MovieCard">
       <div className="Poster">
-        <div className="img">
+        <div className="img" onClick={() => handleClickedMovie(title)}>
           {children}
           <h3 className="watchTrailer">Watch Trailer</h3>
         </div>

@@ -159,3 +159,22 @@ textarea.form-control {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+/**************************Trailer******************************/
+
+.trailer {
+  width: 1200px;
+  margin: 30px auto;
+  padding: 0px;
+  display: flex;
+}
+
+.movieTitle {
+  margin-top: 100px;
+  margin-left: 70px;
+}
+
+iframe {
+  margin-bottom: 20px;
+  border: 1px grey solid;
+}
